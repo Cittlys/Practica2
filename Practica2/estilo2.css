@@ -1,0 +1,92 @@
+body{
+	background: linear-gradient(to bottom, #696969 0%, #DCDCDC 100%); /*color de fondo gradiante*/
+	/*background-color: black;*/
+
+	}
+
+#Navegacion a{ /*estilo a las etiquetas a*/
+	text-decoration:none;
+	color: black;
+}
+
+#Navegacion a:hover{ /*cuando esta sobre ella el apuntador del mouse*/
+	text-decoration: underline wavy white;
+	color: whitesmoke;
+}
+
+#Navegacion{ /*a todo el identificador NAVEGACION*/
+	background-color:rgba(184, 197, 239); /*color de fondo transparente*/
+	position: absolute; /*tomara todo el espacio*/
+	left: 0; /*para que tome el lugar del margen superior izquierdo */
+	top: 0;/*para que suba el margen superior*/
+	display: block;/*para que lo tome como una caja como tal*/
+	width: 100%;
+}
+
+#Navegacion ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+}
+
+#Navegacion a:hover{
+	background-color: coral;
+	color: black;
+}
+
+
+#Navegacion li{
+	float: left;
+}
+
+#Navegacion li a{
+	padding: 30px; /*espacio entre los elementos*/
+	display: inline-block; /*anchura*/
+	text-decoration: none;
+}
+
+img{
+	width: 100%;
+	border-radius: 1em;
+}
+
+/*Identificador de contenido*/
+
+#Contenido{
+	background-color:rgba(255,0,0, 0.4); /*color de fondo transparente*/
+	max-width: 1200px;
+	position: relative;
+	margin: 0 auto;
+	padding-top: 20px; /*siempre el tope superior, en la parte de hasta arriba*/
+	padding: 2%;
+}
+
+#Contenido header{
+	height: 15%;
+	padding: 10px 20px;
+	background-color: tomato;
+	border-radius: 1em; /*para redondear*/
+}
+
+#Principal{
+	height: 600px; /*alto*/
+	width: 35%; /*ancho*/
+	float: left; /*ubicar a la izquiera*/
+	padding: 10px;
+}
+
+#Secundaria{
+	width: 35%; /*ancho*/
+	float: left; /*ubicar a la izquiera*/
+	padding: 10px;
+}
+
+
+#Contenido footer{
+	background-color: tomato;
+	clear: both;/*quita los elementos flotantes, both para que vaya despues de los elementos que ya tenemos anteriormente(principal, secundario etc...*/
+	width: 100%;
+	height: 35px;
+	border-radius: 1em; /*para redondear*/
+}
